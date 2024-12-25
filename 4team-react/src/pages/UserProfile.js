@@ -450,7 +450,7 @@ const UserProfile = () => {
                       {review.imageUrl && (
                         <Card.Img
                           variant="top"
-                          src={`http://13.209.126.207:8989/api/reviews/images/${review.imageUrl}`}
+                          src={`${review.imageUrl}`}
                           alt="리뷰 이미지"
                         />
                       )}

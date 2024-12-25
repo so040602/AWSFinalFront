@@ -14,7 +14,7 @@ function RecipeCard({ recipe }) {
       <div className="recipe-thumbnail">
         {recipe.recipeThumbnail ? (
           <img
-            src={`http://13.209.126.207:8989${recipe.recipeThumbnail}`}
+            src={`${recipe.recipeThumbnail}`}
             alt={recipe.recipeTitle}
             onError={(e) => {
               e.target.onerror = null;

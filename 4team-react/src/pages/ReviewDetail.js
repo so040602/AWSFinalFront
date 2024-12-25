@@ -163,7 +163,7 @@ const ReviewDetail = () => {
             </div>
             {review.imageUrl && (
               <img
-                src={`http://13.209.126.207:8989/api/reviews/images/${review.imageUrl}`}
+                src={`${review.imageUrl}`}
                 alt="리뷰 이미지"
                 className="review-detail-image"
               />

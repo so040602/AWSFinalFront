@@ -115,7 +115,7 @@ function RecipeDetail() {
         <div className="detail-thumbnail-container">
           {recipe.recipeThumbnail ? (
             <img
-              src={`http://13.209.126.207:8989${recipe.recipeThumbnail}`}
+              src={`${recipe.recipeThumbnail}`}
               alt={recipe.recipeTitle}
               className="detail-thumbnail-image"
             />
@@ -250,7 +250,7 @@ function RecipeDetail() {
                 <div className="step-image">
                   {step.stepImage ? (
                     <img
-                      src={`http://13.209.126.207:8989${step.stepImage}`}
+                      src={`${step.stepImage}`}
                       alt={`조리 단계 ${step.stepOrder}`}
                     />
                   ) : (
@@ -294,7 +294,7 @@ function RecipeDetail() {
                 <div className="step-image-large">
                   {recipe.recipeSteps[currentStep].stepImage ? (
                     <img
-                      src={`http://13.209.126.207:8989${recipe.recipeSteps[currentStep].stepImage}`}
+                      src={`${recipe.recipeSteps[currentStep].stepImage}`}
                       alt={`조리 단계 ${recipe.recipeSteps[currentStep].stepOrder}`}
                     />
                   ) : (

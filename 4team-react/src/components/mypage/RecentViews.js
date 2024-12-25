@@ -129,7 +129,7 @@ function RecentViews() {
                       <CardMedia
                         component="img"
                         height="140"
-                        image={`http://13.209.126.207:8989/api/reviews/images/${review.imageUrl}`}
+                        image={`${review.imageUrl}`}
                         alt={review.title}
                       />
                     )}
